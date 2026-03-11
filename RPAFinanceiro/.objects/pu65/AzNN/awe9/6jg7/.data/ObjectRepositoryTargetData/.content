@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="XX8htxbNxUSWySpDXc47fg" Reference="s7GfPwX_u0WE4GyZeCCuzA/6jg7Mv3cmE-PdEHtBGBK_A" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="481e3c62-26ff-421f-a8fc-b417c213bd9a" DesignTimeRectangle="136, 389, 791, 17" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;wnd aaname='Painel do Explorer' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' cls='DirectUIHWND' /&gt;&lt;wnd aaname='Nome:' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' cls='ComboBox' /&gt;&lt;wnd automationid='1001' cls='Edit' /&gt;" Guid="e61495c4-b60c-4233-94e8-21d8073d622d" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='mmex.exe' cls='#32770' title='Choose database file to create' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="None">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="481e3c62-26ff-421f-a8fc-b417c213bd9a" CvTextArea="90, 391, 39, 13" CvTextArgument="Nome:" CvType="Text" DesignTimeRectangle="18, 386, 115, 23" ElementType="Text" FuzzySelectorArgument="&lt;wnd aaname='Painel do Explorer' cls='DirectUIHWND' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;&lt;ctrl name='Painel do Explorer' role='pane' matching:name='fuzzy' fuzzylevel:name='0.0' /&gt;&lt;ctrl name='Painel de Layout de Pastas' role='pane' matching:name='fuzzy' fuzzylevel:name='0.0' /&gt;&lt;ctrl name='Painel de Detalhes' role='pane' matching:name='fuzzy' fuzzylevel:name='0.0' /&gt;&lt;ctrl name='Nome:' role='text' automationid='' matching:name='fuzzy' fuzzylevel:name='0.0' matching:automationid='fuzzy' fuzzylevel:automationid='0.0' check:text='Nome:' /&gt;" Guid="dcc4cc76-9f40-48c4-bbc2-ac32f17a1cb8" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="47def7dc2ad26470a0fc85804c9ae81b.jpg" xmlns="">03PQTzt8RKEG-mVwNDwnixw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

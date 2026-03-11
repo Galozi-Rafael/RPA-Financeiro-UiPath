@@ -1,0 +1,179 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="SaveDialog" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:this="clr-namespace:" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="in_DatabaseName" Type="InArgument(x:String)" />
+  </x:Members>
+  <this:SaveDialog.in_DatabaseName>
+    <InArgument x:TypeArguments="x:String" />
+  </this:SaveDialog.in_DatabaseName>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap2010:WorkflowViewState.IdRef>SaveDialog_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="SaveDialog" sap:VirtualizedContainerService.HintSize="1245,843" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence DisplayName="Sequence - Save Dialog" sap:VirtualizedContainerService.HintSize="486,820" sap2010:WorkflowViewState.IdRef="Sequence_2">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Choose database file to create" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="452,737" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="04d84622-c3af-43ed-ba73-d706f560bb38" Version="V2">
+        <uix:NApplicationCard.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,491" sap2010:WorkflowViewState.IdRef="Sequence_3">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Nome'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,246" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="WindowMessages" ScopeIdentifier="04d84622-c3af-43ed-ba73-d706f560bb38" Text="[in_DatabaseName]" Version="V5">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable CVScreenId="481e3c62-26ff-421f-a8fc-b417c213bd9a" ContentHash="XX8htxbNxUSWySpDXc47fg" DesignTimeRectangle="136, 389, 791, 17" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;wnd aaname='Painel do Explorer' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' cls='DirectUIHWND' /&gt;&lt;wnd aaname='Nome:' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' cls='ComboBox' /&gt;&lt;wnd automationid='1001' cls='Edit' /&gt;" Guid="e61495c4-b60c-4233-94e8-21d8073d622d" InformativeScreenshot="47def7dc2ad26470a0fc85804c9ae81b.jpg" IsResponsive="True" Reference="s7GfPwX_u0WE4GyZeCCuzA/6jg7Mv3cmE-PdEHtBGBK_A" ScopeSelectorArgument="&lt;wnd app='mmex.exe' cls='#32770' title='Choose database file to create' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="None">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="481e3c62-26ff-421f-a8fc-b417c213bd9a" CvTextArea="90, 391, 39, 13" CvTextArgument="Nome:" CvType="Text" DesignTimeRectangle="18, 386, 115, 23" ElementType="Text" FuzzySelectorArgument="&lt;wnd aaname='Painel do Explorer' cls='DirectUIHWND' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;&lt;ctrl name='Painel do Explorer' role='pane' matching:name='fuzzy' fuzzylevel:name='0.0' /&gt;&lt;ctrl name='Painel de Layout de Pastas' role='pane' matching:name='fuzzy' fuzzylevel:name='0.0' /&gt;&lt;ctrl name='Painel de Detalhes' role='pane' matching:name='fuzzy' fuzzylevel:name='0.0' /&gt;&lt;ctrl name='Nome:' role='text' automationid='' matching:name='fuzzy' fuzzylevel:name='0.0' matching:automationid='fuzzy' fuzzylevel:automationid='0.0' check:text='Nome:' /&gt;" Guid="dcc4cc76-9f40-48c4-bbc2-ac32f17a1cb8" SearchSteps="FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NTypeInto.Target>
+                <uix:NTypeInto.VerifyOptions>
+                  <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionTypeIntoOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                  </uix:VerifyExecutionTypeIntoOptions>
+                </uix:NTypeInto.VerifyOptions>
+              </uix:NTypeInto>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Sa&amp;lvar'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,185" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="04d84622-c3af-43ed-ba73-d706f560bb38" Version="V5">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable CVScreenId="832e33cd-b8ae-462d-86ac-262989141241" ContentHash="WyA4sLRZnEK-90HYDK8Fhw" DesignTimeRectangle="747, 489, 88, 26" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;wnd ctrlid='1' title='Sa&amp;amp;lvar' automationid='1' cls='Button' /&gt;" Guid="54a56af4-6997-485a-ab22-fff8879e6c97" InformativeScreenshot="71c4299ba9e96f6e02cafbbcd99cd670.jpg" Reference="s7GfPwX_u0WE4GyZeCCuzA/bcEaTnoHK0mK69-AOSbOMg" ScopeSelectorArgument="&lt;wnd app='mmex.exe' cls='#32770' title='Choose database file to create' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None" />
+                </uix:NClick.Target>
+              </uix:NClick>
+            </Sequence>
+          </ActivityAction>
+        </uix:NApplicationCard.Body>
+        <uix:NApplicationCard.OCREngine>
+          <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
+            <ActivityFunc.Argument>
+              <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+            </ActivityFunc.Argument>
+          </ActivityFunc>
+        </uix:NApplicationCard.OCREngine>
+        <uix:NApplicationCard.TargetApp>
+          <uix:TargetApp Area="0, 43, 960, 540" ContentHash="xVkdsEVoc0mIY38MYLOePQ" FilePath="C:\Program Files\Money Manager EX\bin\mmex.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAASvSURBVFhHrZT7T1NnHMb710jP+57TlnNaQDrwhjqg5VKhBSsIiDK8gHObqEOHM84B4maMCqgbZQh4AfEyUaO74Fw244zRJW7ZL1uMWbZf9ic8y3MaSzmnrRD5Jp/k9H2/z/M5SZs6HAuc4JSOsqs+NEyvRvt3VSZ85hnvrPuLMoFJA233Qhh61oWn/0zir/+m8PzfITx62WfCZ57xbujZQXOXGWvPgqf0so72u9X48cV5PPm7H1eeN+H4Tzp6HixJCe+4w11mmGWHtXdeE5rIx9Rvn+PxywEMPlqNI/eXLAhmmGUHu6z9GSc6VYQf/hzGpV+bcXgm641gB7vYafWknNrJVfj5xQgGHwVw6PusRYFd7GS31TdngmP5uPPHIE49DKDrW+eiwk5202H1mlM0pOPLXw5h6HE9DnzjnBfBgwJr90nbeTrYTQddVr+jcTKIm78fQec9JSMf3lXQ/IVAuE8gp1mF0aCi+qjAlpiw7aaCDrrmyFeeMzD6pBvd91dg310lLe0TCpa2Smi1qSnYIbF72p5Lhg666Ey8QHSsGJeedqLjjkjL7tvCFGg1s7ijcz+TkgPSlrVCF52JF9h/uwWfPajCB7dlWrZelNAicVw1Eq3jEsvaJfK2SNQPzN6510u8P23PJ0MXnaa88KSOcw8/xp47Bt67JdNSf0ZCjcTxb4ufFbZL5G6JPy/fJeHbFKf1oj2fDF100u0oPOnDyOOPsPOmmpGmYRVqWJhoEYFNIyoK2gRyNgvb7nygk27HmoECDD58F21fqxnZfk2Ft0FArZ7FFRHQ6wSiA9K8t2YyQSfdjvJzq3HsQTO239BeS/SsCvd6AVllx7NBIHBYxbbr9lwq6KTbERxchZ6ZRrRe0+ZF05iGt7skjI0Ccp1io2iftGVSQSfdjlUn/OidaUHLVdeCyW8V8EQVFO6UkCElQV1Ms+1aoZNuR26vF70zW7F5ypWR6tMayvtUk42jmnm2tFXAaBDmM3+MIqSYlPWqtrwVOul25Hyio3O6GZuveNE06U7Lig4JUamYrNyjmmd57wjzq+Bz4a7Z+0CPZssnQxeddJv/BXXD5Wi7sQYNE560lHZrEBVOE63aifBZN3JbBPR6BdVnXJCh+B1Zd8plyydDF52Jf8KVxwrQcSuM+suetGy44IFngwKl3JnglTD5zGgUqLtkzydDF52JF8juMrD1chiNE35EL2anpfK0O/4SZc6UuGsUVPa7bblk6KCLzsQLcJb3vIW265WovZCdkZrxbJQcdWH5XtX8KtSQE8t2q1h7RENk1L5vhQ665sg5rk4dtUMlaJxYgci4Pi+8mwTcUcV2ng5200GX1W+OZ78XG0cDWH8hH1Wj+mspPeFByXG37TwV7GQ3HVbvnDEO5KB+vBiRsXyEzhuLArvYyW6rL+Vkd/oQjhUhPOZHxYjxRrCDXey0ejKO7NBRfLIA4bFlqBjJRfAr74Jghll2sMvaP69RdurQ9/tQ3O9H5YgfZcN5CMR8KI15U8I77nCXGWbZYe1d8GS1G3DvNZD/qQ9r+vMQjMUJxHJNXn3mnb87x9xlxtqzKJO1Q8eSNh1ilwFtTxw+84x31v3Xzf8CGREbS7XTnQAAAABJRU5ErkJggg==" InformativeScreenshot="2cd0bed184937f2fd74949ba5cdc1a41.jpg" Reference="s7GfPwX_u0WE4GyZeCCuzA/bLKVdk-a-0yeqPyl2kgdiA" Selector="&lt;wnd app='mmex.exe' cls='#32770' title='Choose database file to create' /&gt;" Version="V2">
+            <uix:TargetApp.Arguments>
+              <InArgument x:TypeArguments="x:String" />
+            </uix:TargetApp.Arguments>
+            <uix:TargetApp.WorkingDirectory>
+              <InArgument x:TypeArguments="x:String" />
+            </uix:TargetApp.WorkingDirectory>
+          </uix:TargetApp>
+        </uix:NApplicationCard.TargetApp>
+      </uix:NApplicationCard>
+    </Sequence>
+  </Sequence>
+</Activity>

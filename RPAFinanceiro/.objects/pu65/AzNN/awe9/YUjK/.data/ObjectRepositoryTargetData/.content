@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="1VqQYVz1jkCUQs6iRuyqVQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" DesignTimeRectangle="0, 0, 960, 540" ElementVisibilityArgument="Interactive" Guid="02435f18-bc98-4134-a518-8774390cdfe3" ScopeSelectorArgument="&lt;wnd app='mmex.exe' cls='#32770' title='Choose database file to create' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None">
+      <imageRef attrName="InformativeScreenshot" originalValue="3da1e2afaed60fd54af81ec2d1b39a3d.jpg" xmlns="">0uEopf5xeKUi4Q1P0O4Dk4A</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

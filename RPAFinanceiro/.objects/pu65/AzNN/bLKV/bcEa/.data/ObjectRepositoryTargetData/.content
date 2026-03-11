@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="WyA4sLRZnEK-90HYDK8Fhw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="832e33cd-b8ae-462d-86ac-262989141241" DesignTimeRectangle="747, 489, 88, 26" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;wnd ctrlid='1' title='Sa&amp;amp;lvar' automationid='1' cls='Button' /&gt;" Guid="54a56af4-6997-485a-ab22-fff8879e6c97" ScopeSelectorArgument="&lt;wnd app='mmex.exe' cls='#32770' title='Choose database file to create' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None">
+      <imageRef attrName="InformativeScreenshot" originalValue="71c4299ba9e96f6e02cafbbcd99cd670.jpg" xmlns="">0FNPF4Z6GLUeRbSzs2KQ2Ww</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="d-j5x0EuPESpSyEBPQH-bw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="97493cff-8b2c-478f-a3b4-e0a78aeba353" DesignTimeRectangle="90, 249, 170, 23" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;wnd ctrlid='5002' title='&amp;amp;New Database' automationid='5002' /&gt;" Guid="975a87a4-8b90-4f1b-8321-b00ad3477d3e" ScopeSelectorArgument="&lt;wnd app='mmex.exe' cls='#32770' title='Money Manager Ex 1.9.2 64-bit' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None">
+      <imageRef attrName="InformativeScreenshot" originalValue="6aad6c979bf4fe0218c1f9133add433b.jpg" xmlns="">0xriJQMsbe0Gl6JdNdJ_YFQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,6 @@
+{
+  "Name": "RPAFinanceiro",
+  "ProjectType": "Process",
+  "Description": "RPA que controla uma aplicação financeira.\r\nCria base de dados.\r\nImporta transações .csv.\r\nExporta relatórios em formato .csv.",
+  "MainFile": "Main.xaml"
+}

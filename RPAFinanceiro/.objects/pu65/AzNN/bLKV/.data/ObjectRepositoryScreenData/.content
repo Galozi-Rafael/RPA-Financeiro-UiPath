@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryScreenData ContentHash="xVkdsEVoc0mIY38MYLOePQ" Reference="s7GfPwX_u0WE4GyZeCCuzA/bLKVdk-a-0yeqPyl2kgdiA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:p="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryScreenData.Data>
+    <TargetApp x:Key="TargetApp" Area="0, 43, 960, 540" ContentHash="K_iPmPGSJkGM0WDLGs23AA" FilePath="C:\Program Files\Money Manager EX\bin\mmex.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAASvSURBVFhHrZT7T1NnHMb710jP+57TlnNaQDrwhjqg5VKhBSsIiDK8gHObqEOHM84B4maMCqgbZQh4AfEyUaO74Fw244zRJW7ZL1uMWbZf9ic8y3MaSzmnrRD5Jp/k9H2/z/M5SZs6HAuc4JSOsqs+NEyvRvt3VSZ85hnvrPuLMoFJA233Qhh61oWn/0zir/+m8PzfITx62WfCZ57xbujZQXOXGWvPgqf0so72u9X48cV5PPm7H1eeN+H4Tzp6HixJCe+4w11mmGWHtXdeE5rIx9Rvn+PxywEMPlqNI/eXLAhmmGUHu6z9GSc6VYQf/hzGpV+bcXgm641gB7vYafWknNrJVfj5xQgGHwVw6PusRYFd7GS31TdngmP5uPPHIE49DKDrW+eiwk5202H1mlM0pOPLXw5h6HE9DnzjnBfBgwJr90nbeTrYTQddVr+jcTKIm78fQec9JSMf3lXQ/IVAuE8gp1mF0aCi+qjAlpiw7aaCDrrmyFeeMzD6pBvd91dg310lLe0TCpa2Smi1qSnYIbF72p5Lhg666Ey8QHSsGJeedqLjjkjL7tvCFGg1s7ijcz+TkgPSlrVCF52JF9h/uwWfPajCB7dlWrZelNAicVw1Eq3jEsvaJfK2SNQPzN6510u8P23PJ0MXnaa88KSOcw8/xp47Bt67JdNSf0ZCjcTxb4ufFbZL5G6JPy/fJeHbFKf1oj2fDF100u0oPOnDyOOPsPOmmpGmYRVqWJhoEYFNIyoK2gRyNgvb7nygk27HmoECDD58F21fqxnZfk2Ft0FArZ7FFRHQ6wSiA9K8t2YyQSfdjvJzq3HsQTO239BeS/SsCvd6AVllx7NBIHBYxbbr9lwq6KTbERxchZ6ZRrRe0+ZF05iGt7skjI0Ccp1io2iftGVSQSfdjlUn/OidaUHLVdeCyW8V8EQVFO6UkCElQV1Ms+1aoZNuR26vF70zW7F5ypWR6tMayvtUk42jmnm2tFXAaBDmM3+MIqSYlPWqtrwVOul25Hyio3O6GZuveNE06U7Lig4JUamYrNyjmmd57wjzq+Bz4a7Z+0CPZssnQxeddJv/BXXD5Wi7sQYNE560lHZrEBVOE63aifBZN3JbBPR6BdVnXJCh+B1Zd8plyydDF52Jf8KVxwrQcSuM+suetGy44IFngwKl3JnglTD5zGgUqLtkzydDF52JF8juMrD1chiNE35EL2anpfK0O/4SZc6UuGsUVPa7bblk6KCLzsQLcJb3vIW265WovZCdkZrxbJQcdWH5XtX8KtSQE8t2q1h7RENk1L5vhQ665sg5rk4dtUMlaJxYgci4Pi+8mwTcUcV2ng5200GX1W+OZ78XG0cDWH8hH1Wj+mspPeFByXG37TwV7GQ3HVbvnDEO5KB+vBiRsXyEzhuLArvYyW6rL+Vkd/oQjhUhPOZHxYjxRrCDXey0ejKO7NBRfLIA4bFlqBjJRfAr74Jghll2sMvaP69RdurQ9/tQ3O9H5YgfZcN5CMR8KI15U8I77nCXGWbZYe1d8GS1G3DvNZD/qQ9r+vMQjMUJxHJNXn3mnb87x9xlxtqzKJO1Q8eSNh1ilwFtTxw+84x31v3Xzf8CGREbS7XTnQAAAABJRU5ErkJggg==" Reference="s7GfPwX_u0WE4GyZeCCuzA/bLKVdk-a-0yeqPyl2kgdiA" Selector="&lt;wnd app='mmex.exe' cls='#32770' title='Choose database file to create' /&gt;" Version="V2">
+      <TargetApp.Arguments>
+        <p:InArgument x:TypeArguments="x:String" />
+      </TargetApp.Arguments>
+      <TargetApp.WorkingDirectory>
+        <p:InArgument x:TypeArguments="x:String" />
+      </TargetApp.WorkingDirectory>
+      <imageRef attrName="InformativeScreenshot" originalValue="2cd0bed184937f2fd74949ba5cdc1a41.jpg" xmlns="">0WeSYNVapNUWiThPy8bV1aA</imageRef>
+    </TargetApp>
+  </ObjectRepositoryScreenData.Data>
+</ObjectRepositoryScreenData>
