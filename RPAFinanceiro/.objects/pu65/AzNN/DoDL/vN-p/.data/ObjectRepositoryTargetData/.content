@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="-boSJnoteEeP4z4f4BVDIA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="63892c2a-cc77-4d52-b600-e0d5924aaf21" CvTextArea="119, 183, 59, 14" CvTextArgument="13/03/2026" CvType="Text" DesignTimeRectangle="117, 178, 95, 25" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;wnd cls='wxWindow' title='panel' matching:title='fuzzy' fuzzylevel:title='0.0' /&gt;&lt;wnd cls='SysDateTimePick32' /&gt;" Guid="640fd731-99f5-4392-b0fe-a98ad35d8ece" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='mmex.exe' cls='#32770' title='Edit Account' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="63892c2a-cc77-4d52-b600-e0d5924aaf21" CvTextArea="22, 183, 77, 15" CvTextArgument="Opening Date:" CvType="Text" DesignTimeRectangle="23, 182, 77, 16" ElementType="Text" FuzzySelectorArgument="&lt;wnd ctrlid='5105' matching:ctrlid='fuzzy' fuzzylevel:ctrlid='0.0' title='Opening Date:' matching:title='fuzzy' fuzzylevel:title='0.0' automationid='5105' check:text='Opening Date:' /&gt;" Guid="a59a3697-e005-48fa-9bce-a9c26b89ca07" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="5f732d20e8cb8ec401fa11fcf7a6bceb.jpg" xmlns="">0sl6RcKrmZ029bI02kvQ2Ew</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

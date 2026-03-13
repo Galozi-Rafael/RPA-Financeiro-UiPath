@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="iaaNEQ3Lv0GGrPYKZmsEbA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="63892c2a-cc77-4d52-b600-e0d5924aaf21" DesignTimeRectangle="111, 516, 75, 23" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;wnd ctrlid='5105' title='panel' /&gt;&lt;wnd ctrlid='5100' title='&amp;amp;OK ' automationid='5100' /&gt;" Guid="7d0d7b4e-7b06-476e-9006-01443fdf1ab7" ScopeSelectorArgument="&lt;wnd app='mmex.exe' cls='#32770' title='Edit Account' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None">
+      <imageRef attrName="InformativeScreenshot" originalValue="cf9bf1eedee6bcb1bcac7882fe6ddf89.jpg" xmlns="">0paHQrrPaAkS1kjnSOKZR5Q</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="zCBqytSJ-EeGoDZiwha68A" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="42e94b37-715d-408c-8608-55e1b70d9f48" DesignTimeRectangle="595, 343, 75, 23" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;wnd ctrlid='5106' title='&amp;amp;Next &amp;gt;' automationid='5106' /&gt;" Guid="0dd0ce9f-1a50-491e-be4e-45a225b6ca64" ScopeSelectorArgument="&lt;wnd app='mmex.exe' cls='#32770' title='Add Account Wizard' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None">
+      <imageRef attrName="InformativeScreenshot" originalValue="8c23a11916a347b8fe7f49159f35d268.jpg" xmlns="">0l0lQBHxV_k6mUaRilCdCxw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

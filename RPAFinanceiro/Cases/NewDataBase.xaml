@@ -109,14 +109,19 @@
       <AssemblyReference>System.IO.FileSystem.DriveInfo</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="NewDataBase" sap:VirtualizedContainerService.HintSize="1245,1000" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="NewDataBase" sap:VirtualizedContainerService.HintSize="1245,1177" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="Sequence - New Database" sap:VirtualizedContainerService.HintSize="486,977" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence DisplayName="Sequence - New Database" sap:VirtualizedContainerService.HintSize="486,1154" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <Sequence.Variables>
+        <Variable x:TypeArguments="x:String" Name="Timestamp">
+          <Variable.Default>
+            <VisualBasicValue x:TypeArguments="x:String" ExpressionText="DateTime.Now.ToString(&quot;yyyyMMddHHmm&quot;)" />
+          </Variable.Default>
+        </Variable>
         <Variable x:TypeArguments="x:String" Name="localPath" />
         <Variable x:TypeArguments="x:String" Name="FilePath" />
       </Sequence.Variables>
@@ -185,12 +190,19 @@
           <OutArgument x:TypeArguments="x:String">[FilePath]</OutArgument>
         </Assign.To>
         <Assign.Value>
-          <InArgument x:TypeArguments="x:String">[Path.Combine(localPath, "New Database")]</InArgument>
+          <InArgument x:TypeArguments="x:String">[Path.Combine(localPath, "New Database" + Timestamp)]</InArgument>
         </Assign.Value>
       </Assign>
-      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" DisplayName="SaveDialog - Invoke Workflow File (Servs\SaveDialog.xaml)" sap:VirtualizedContainerService.HintSize="452,168" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Servs\SaveDialog.xaml">
+      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" DisplayName="SaveDialog - Invoke Workflow File (Servs\SaveDialog.xaml)" sap:VirtualizedContainerService.HintSize="452,177" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Servs\SaveDialog.xaml">
         <ui:InvokeWorkflowFile.Arguments>
           <InArgument x:TypeArguments="x:String" x:Key="in_DatabaseName">[FilePath]</InArgument>
+        </ui:InvokeWorkflowFile.Arguments>
+      </ui:InvokeWorkflowFile>
+      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" DisplayName="NewDataBaseWizard - Invoke Workflow File (Servs\NewDataBaseWizard.xaml)" sap:VirtualizedContainerService.HintSize="452,168" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="Servs\NewDataBaseWizard.xaml">
+        <ui:InvokeWorkflowFile.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="in_UserName">Ze das Couves</InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="in_Currency">BRL</InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="in_AccountName">Nova conta teste</InArgument>
         </ui:InvokeWorkflowFile.Arguments>
       </ui:InvokeWorkflowFile>
     </Sequence>

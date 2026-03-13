@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="x6UvzPwp8USJMnG8zHg9-w" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="5b2d13ee-5254-47e5-b1c0-e6eeec557b17" DesignTimeRectangle="577, 343, 75, 23" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;wnd ctrlid='5106' title='&amp;amp;Finish' automationid='5106' /&gt;" Guid="fa5c8668-7c25-49bb-9759-4f82b99b1165" ScopeSelectorArgument="&lt;wnd app='mmex.exe' cls='#32770' title='New Database Wizard' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None">
+      <imageRef attrName="InformativeScreenshot" originalValue="0303aaab0c3270f82269311c5438c871.jpg" xmlns="">0csTHjm0vYkqbdIr0VsbVPg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,285 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="NewDataBaseWizard" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:this="clr-namespace:" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="in_UserName" Type="InArgument(x:String)" />
+    <x:Property Name="in_Currency" Type="InArgument(x:String)" />
+    <x:Property Name="in_AccountName" Type="InArgument(x:String)" />
+  </x:Members>
+  <this:NewDataBaseWizard.in_UserName>
+    <InArgument x:TypeArguments="x:String" />
+  </this:NewDataBaseWizard.in_UserName>
+  <this:NewDataBaseWizard.in_Currency>
+    <InArgument x:TypeArguments="x:String" />
+  </this:NewDataBaseWizard.in_Currency>
+  <this:NewDataBaseWizard.in_AccountName>
+    <InArgument x:TypeArguments="x:String" />
+  </this:NewDataBaseWizard.in_AccountName>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap2010:WorkflowViewState.IdRef>NewDataBaseWizard_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Numerics</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="NewDataBaseWizard" sap:VirtualizedContainerService.HintSize="819,3308" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence DisplayName="Sequence - New Database Wizard" sap:VirtualizedContainerService.HintSize="486,3285" sap2010:WorkflowViewState.IdRef="Sequence_2">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[UiPath.UIAutomationNext.Enums.NAppCloseMode.Never]" DisplayName="New Database Wizard" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="452,3202" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" OpenMode="[UiPath.UIAutomationNext.Enums.NAppOpenMode.Never]" ScopeGuid="ce11133d-bf59-4780-a503-0aab6bffaa41" Version="V2">
+        <uix:NApplicationCard.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,2956" sap2010:WorkflowViewState.IdRef="Sequence_3">
+              <Sequence.Variables>
+                <Variable x:TypeArguments="x:String" Name="OpenDate" />
+              </Sequence.Variables>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'unchecked'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,194" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ce11133d-bf59-4780-a503-0aab6bffaa41" Version="V5">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable CVScreenId="569b38aa-0cc3-4aa9-a180-2a92607974ad" ContentHash="-lbmwHXlkUucWrgWPJbM2g" DesignTimeRectangle="577, 343, 75, 23" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;wnd ctrlid='5106' title='&amp;amp;Next &amp;gt;' automationid='5106' /&gt;" Guid="58fa20f6-3dff-4c39-84fc-963f17d8f3be" InformativeScreenshot="3644eeaeebb85c440ba60cc7a53f1810.jpg" Reference="s7GfPwX_u0WE4GyZeCCuzA/De5WfkWnVkSRAp36FbYRsQ" ScopeSelectorArgument="&lt;wnd app='mmex.exe' cls='#32770' title='New Database Wizard' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None" />
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'User Name'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,246" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="SameAsCard" ScopeIdentifier="ce11133d-bf59-4780-a503-0aab6bffaa41" Text="[in_UserName]" Version="V5">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable CVScreenId="11c1e2dd-77d5-4ebe-a131-5b525418ece0" ContentHash="LCaas6X0LkO2LhiUKKg-6g" CvElementArea="227, 195, 202, 24" CvType="InputBox" DesignTimeRectangle="228, 196, 200, 23" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;wnd cls='wxWindow' title='panel' matching:title='fuzzy' fuzzylevel:title='0.0' /&gt;&lt;wnd cls='Edit' /&gt;" Guid="a2bc2da3-a6e5-4cd1-9ce1-44c0dfbf8127" InformativeScreenshot="6baabb4dfb7c6439fda063de64b35e77.jpg" IsResponsive="True" Reference="s7GfPwX_u0WE4GyZeCCuzA/_OXzwhOamkinPIN7OkyQyA" ScopeSelectorArgument="&lt;wnd app='mmex.exe' cls='#32770' title='New Database Wizard' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="11c1e2dd-77d5-4ebe-a131-5b525418ece0" DesignTimeRectangle="159, 199, 59, 16" ElementType="Text" FuzzySelectorArgument="&lt;wnd cls='wxWindow' title='panel' matching:title='fuzzy' fuzzylevel:title='0.0' /&gt;&lt;wnd ctrlid='5105' matching:ctrlid='fuzzy' fuzzylevel:ctrlid='0.0' title='User Name' matching:title='fuzzy' fuzzylevel:title='0.0' automationid='5105' check:text='User Name' /&gt;" Guid="4add6419-7ff4-4ac2-830b-6b7896623bff" SearchSteps="FuzzySelector" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NTypeInto.Target>
+                <uix:NTypeInto.VerifyOptions>
+                  <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionTypeIntoOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                  </uix:VerifyExecutionTypeIntoOptions>
+                </uix:NTypeInto.VerifyOptions>
+              </uix:NTypeInto>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'unchecked(1)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,194" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ce11133d-bf59-4780-a503-0aab6bffaa41" Version="V5">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable CVScreenId="11c1e2dd-77d5-4ebe-a131-5b525418ece0" ContentHash="Jb4Bct8BPU-HTeWIyIoCRg" DesignTimeRectangle="154, 72, 220, 23" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;wnd cls='wxWindow' idx='2' title='panel' /&gt;&lt;wnd cls='Button' title='Set Currency' automationid='-31982' /&gt;" Guid="efeb1f08-e8ac-4f44-ad72-3af3177390c5" InformativeScreenshot="a063d471234744507f155b5d4c0fef6e.jpg" Reference="s7GfPwX_u0WE4GyZeCCuzA/Va9aumIRHUad2x8H4wLLfw" ScopeSelectorArgument="&lt;wnd app='mmex.exe' cls='#32770' title='New Database Wizard' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Edit'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,246" sap2010:WorkflowViewState.IdRef="NTypeInto_2" InteractionMode="SameAsCard" ScopeIdentifier="ce11133d-bf59-4780-a503-0aab6bffaa41" Text="[in_Currency]" Version="V5">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable CVScreenId="22c12a11-9060-4c40-ad69-68eaee3b9be3" ContentHash="DYfqa4JhOkicjjOlDWi50w" DesignTimeRectangle="98, 264, 130, 18" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;wnd cls='Edit' automationid='-31972' /&gt;" Guid="bda875ed-84db-4457-8de2-a486c3c7aeeb" InformativeScreenshot="1bb419279bf943a83f2369a3cb635fff.jpg" Reference="s7GfPwX_u0WE4GyZeCCuzA/iLszCf7-9k-Cciu0G3WgoQ" ScopeSelectorArgument="&lt;wnd app='mmex.exe' cls='#32770' title='Currency Manager' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None" />
+                </uix:NTypeInto.Target>
+                <uix:NTypeInto.VerifyOptions>
+                  <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionTypeIntoOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                  </uix:VerifyExecutionTypeIntoOptions>
+                </uix:NTypeInto.VerifyOptions>
+              </uix:NTypeInto>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'BRL(1)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,194" sap2010:WorkflowViewState.IdRef="NClick_8" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ce11133d-bf59-4780-a503-0aab6bffaa41" Version="V5">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable CVScreenId="c53e8db6-f559-42de-89b4-8b8e52c5f3af" ContentHash="ioTYpvWzNkakPoGPyqZ0Kg" DesignTimeRectangle="25, 116, 219, 22" ElementType="ListItem" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;wnd cls='wxWindow' title='dataviewCtrl' /&gt;&lt;ctrl name='dataviewCtrl' role='list' /&gt;&lt;ctrl role='list item' aastate='focalizável, selecionável' /&gt;" Guid="cb2fc3c0-c3b8-4288-ad8c-b0419f2ca47e" InformativeScreenshot="7e23d8ebd8a2607059307d44bc88d644.jpg" Reference="s7GfPwX_u0WE4GyZeCCuzA/ki91wxjvmEOeQ4WtvLwFGw" ScopeSelectorArgument="&lt;wnd app='mmex.exe' cls='#32770' title='Currency Manager' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None" />
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'unchecked(2)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,194" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ce11133d-bf59-4780-a503-0aab6bffaa41" Version="V5">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable CVScreenId="22c12a11-9060-4c40-ad69-68eaee3b9be3" ContentHash="TsGLDUppyUurr_WnlJkWNg" DesignTimeRectangle="47, 304, 75, 23" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;wnd cls='wxWindow' title='panel' /&gt;&lt;wnd ctrlid='5037' title='&amp;amp;Select' automationid='5037' /&gt;" Guid="604fa229-cdbb-43e6-ae51-4e87dcf8f367" InformativeScreenshot="f9e07c696fc27f7e297be8585bf4f2f3.jpg" Reference="s7GfPwX_u0WE4GyZeCCuzA/2uWltcfTaEqZIoEA0vZ3zA" ScopeSelectorArgument="&lt;wnd app='mmex.exe' cls='#32770' title='Currency Manager' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None" />
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'unchecked(3)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,194" sap2010:WorkflowViewState.IdRef="NClick_4" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ce11133d-bf59-4780-a503-0aab6bffaa41" Version="V5">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable CVScreenId="5b2d13ee-5254-47e5-b1c0-e6eeec557b17" ContentHash="x6UvzPwp8USJMnG8zHg9-w" DesignTimeRectangle="577, 343, 75, 23" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;wnd ctrlid='5106' title='&amp;amp;Finish' automationid='5106' /&gt;" Guid="fa5c8668-7c25-49bb-9759-4f82b99b1165" InformativeScreenshot="0303aaab0c3270f82269311c5438c871.jpg" Reference="s7GfPwX_u0WE4GyZeCCuzA/OIdhsRqMoEym4j8t3YVNCw" ScopeSelectorArgument="&lt;wnd app='mmex.exe' cls='#32770' title='New Database Wizard' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None" />
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'unchecked(4)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,194" sap2010:WorkflowViewState.IdRef="NClick_5" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ce11133d-bf59-4780-a503-0aab6bffaa41" Version="V5">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable CVScreenId="42e94b37-715d-408c-8608-55e1b70d9f48" ContentHash="zCBqytSJ-EeGoDZiwha68A" DesignTimeRectangle="595, 343, 75, 23" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;wnd ctrlid='5106' title='&amp;amp;Next &amp;gt;' automationid='5106' /&gt;" Guid="0dd0ce9f-1a50-491e-be4e-45a225b6ca64" InformativeScreenshot="8c23a11916a347b8fe7f49159f35d268.jpg" Reference="s7GfPwX_u0WE4GyZeCCuzA/wjokFmFNqUyl7kejYO0w1Q" ScopeSelectorArgument="&lt;wnd app='mmex.exe' cls='#32770' title='Add Account Wizard' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None" />
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'unchecked(5)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,194" sap2010:WorkflowViewState.IdRef="NClick_6" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ce11133d-bf59-4780-a503-0aab6bffaa41" Version="V5">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable CVScreenId="59f13c8d-418d-4ac3-9d64-70fc7a0ddf5d" ContentHash="NkhhBH8KJ0q1ubNqng--rQ" DesignTimeRectangle="595, 343, 75, 23" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;wnd ctrlid='5106' title='&amp;amp;Next &amp;gt;' automationid='5106' /&gt;" Guid="052a3755-7a13-40f2-b235-7b5e6d607ba5" InformativeScreenshot="11c7c294a2a75c73996f42883ca6199d.jpg" Reference="s7GfPwX_u0WE4GyZeCCuzA/0JQUAMiJcE6LuIT3wsAp-g" ScopeSelectorArgument="&lt;wnd app='mmex.exe' cls='#32770' title='Add Account Wizard' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None" />
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Name of the Account'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,246" sap2010:WorkflowViewState.IdRef="NTypeInto_3" InteractionMode="SameAsCard" ScopeIdentifier="ce11133d-bf59-4780-a503-0aab6bffaa41" Text="[in_AccountName]" Version="V5">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable CVScreenId="107928f4-89c1-49d2-b167-86874cca8c50" ContentHash="i4_VfjtWCkqRZapFGryLIA" CvElementArea="153, 71, 201, 25" CvType="InputBox" DesignTimeRectangle="154, 72, 200, 23" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;wnd cls='wxWindow' title='panel' matching:title='fuzzy' fuzzylevel:title='0.0' /&gt;&lt;wnd cls='Edit' /&gt;" Guid="da6b9e46-f13a-421e-95d1-af2ad8823002" InformativeScreenshot="fb9eebf5e0a58ed27b0d71364490e93d.jpg" IsResponsive="True" Reference="s7GfPwX_u0WE4GyZeCCuzA/Ud_XgkLyZE-AEApGqvOoBg" ScopeSelectorArgument="&lt;wnd app='mmex.exe' cls='#32770' title='Add Account Wizard' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="107928f4-89c1-49d2-b167-86874cca8c50" CvTextArea="153, 47, 116, 13" CvTextArgument="Name of the Account" CvType="Text" DesignTimeRectangle="154, 46, 115, 16" ElementType="Text" FuzzySelectorArgument="&lt;wnd cls='wxWindow' title='panel' matching:title='fuzzy' fuzzylevel:title='0.0' /&gt;&lt;wnd cls='Static' title='Name of the Account' matching:title='fuzzy' fuzzylevel:title='0.0' automationid='-31950' check:text='Name of the Account' /&gt;" Guid="2b1b42d6-2b33-4e09-9109-d63863a272eb" SearchSteps="FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NTypeInto.Target>
+                <uix:NTypeInto.VerifyOptions>
+                  <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionTypeIntoOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                  </uix:VerifyExecutionTypeIntoOptions>
+                </uix:NTypeInto.VerifyOptions>
+              </uix:NTypeInto>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'unchecked(7)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,194" sap2010:WorkflowViewState.IdRef="NClick_9" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ce11133d-bf59-4780-a503-0aab6bffaa41" Version="V5">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable CVScreenId="579ca520-72cc-4641-988c-c2cebf876a20" ContentHash="iphm99g8I0WWKfALl1439g" DesignTimeRectangle="595, 343, 75, 23" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;wnd ctrlid='5106' title='&amp;amp;Finish' automationid='5106' /&gt;" Guid="4c265e60-069c-44fc-9387-4493e6c97072" InformativeScreenshot="5bfb61fdc2194cd5ccbfbbcb7d0c0a00.jpg" Reference="s7GfPwX_u0WE4GyZeCCuzA/9LB46x-TXkKqASDssz6dLg" ScopeSelectorArgument="&lt;wnd app='mmex.exe' cls='#32770' title='Add Account Wizard' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None" />
+                </uix:NClick.Target>
+              </uix:NClick>
+              <Assign sap:VirtualizedContainerService.HintSize="416,175" sap2010:WorkflowViewState.IdRef="Assign_1">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="x:String">[OpenDate]</OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="x:String">[DateTime.Now.AddYears(-1).ToString("ddMMyyyy")]</InArgument>
+                </Assign.Value>
+              </Assign>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="[UiPath.UIAutomationNext.Enums.NClickMode.Single]" ClipboardMode="[UiPath.UIAutomationNext.Enums.NTypeByClipboardMode.Never]" DisplayName="Type Into 'Opening Date'" EmptyFieldMode="[UiPath.UIAutomationNext.Enums.NEmptyFieldMode.None]" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,246" sap2010:WorkflowViewState.IdRef="NTypeInto_4" InteractionMode="SameAsCard" ScopeIdentifier="ce11133d-bf59-4780-a503-0aab6bffaa41" Text="[OpenDate]" Version="V5">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable CVScreenId="63892c2a-cc77-4d52-b600-e0d5924aaf21" ContentHash="-boSJnoteEeP4z4f4BVDIA" CvTextArea="119, 183, 59, 14" CvTextArgument="13/03/2026" CvType="Text" DesignTimeRectangle="117, 178, 95, 25" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;wnd cls='wxWindow' title='panel' matching:title='fuzzy' fuzzylevel:title='0.0' /&gt;&lt;wnd cls='SysDateTimePick32' /&gt;" Guid="640fd731-99f5-4392-b0fe-a98ad35d8ece" InformativeScreenshot="5f732d20e8cb8ec401fa11fcf7a6bceb.jpg" IsResponsive="True" Reference="s7GfPwX_u0WE4GyZeCCuzA/vN-ptBt2Akq7y1Tuv6rm5A" ScopeSelectorArgument="&lt;wnd app='mmex.exe' cls='#32770' title='Edit Account' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="63892c2a-cc77-4d52-b600-e0d5924aaf21" CvTextArea="22, 183, 77, 15" CvTextArgument="Opening Date:" CvType="Text" DesignTimeRectangle="23, 182, 77, 16" ElementType="Text" FuzzySelectorArgument="&lt;wnd ctrlid='5105' matching:ctrlid='fuzzy' fuzzylevel:ctrlid='0.0' title='Opening Date:' matching:title='fuzzy' fuzzylevel:title='0.0' automationid='5105' check:text='Opening Date:' /&gt;" Guid="a59a3697-e005-48fa-9bce-a9c26b89ca07" SearchSteps="FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NTypeInto.Target>
+              </uix:NTypeInto>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'unchecked(6)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,185" sap2010:WorkflowViewState.IdRef="NClick_7" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ce11133d-bf59-4780-a503-0aab6bffaa41" Version="V5">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable CVScreenId="63892c2a-cc77-4d52-b600-e0d5924aaf21" ContentHash="iaaNEQ3Lv0GGrPYKZmsEbA" DesignTimeRectangle="111, 516, 75, 23" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;wnd ctrlid='5105' title='panel' /&gt;&lt;wnd ctrlid='5100' title='&amp;amp;OK ' automationid='5100' /&gt;" Guid="7d0d7b4e-7b06-476e-9006-01443fdf1ab7" InformativeScreenshot="cf9bf1eedee6bcb1bcac7882fe6ddf89.jpg" Reference="s7GfPwX_u0WE4GyZeCCuzA/ToJTbkToP02pLB5O9x0-Dg" ScopeSelectorArgument="&lt;wnd app='mmex.exe' cls='#32770' title='Edit Account' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None" />
+                </uix:NClick.Target>
+              </uix:NClick>
+            </Sequence>
+          </ActivityAction>
+        </uix:NApplicationCard.Body>
+        <uix:NApplicationCard.OCREngine>
+          <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
+            <ActivityFunc.Argument>
+              <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+            </ActivityFunc.Argument>
+          </ActivityFunc>
+        </uix:NApplicationCard.OCREngine>
+        <uix:NApplicationCard.TargetApp>
+          <uix:TargetApp Area="582, 324, 755, 384" ContentHash="Xx8SUjMjekCD6Mr7zsxAmQ" FilePath="C:\Program Files\Money Manager EX\bin\mmex.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAVKSURBVFhHrZbdT1NnHMd7x/4EudsFAXpe+nZaQBgvKsoKLQhCAasIiDIUgbkpytDhxDlA3dQoBXUCIiAK4stEjW4D57IRZ4wucctCssXIst3sBsLld/meBijntBWjF5/k6e95vt/P054mrQGAYSk4b0VFuK/ane4Rmy/7mmOsdHT1ZO33+TOEa864xzM8q82HQjfQkjGkRLqGlfaa+3nTXc+a8PSfYfz13wie/9uFRy+PqnDNGfe6nh0AzzLDrLZPi24wR9r5tHeyrtiaa+8VzP744iKe/O3D1eflOP6TDa0Po4PCPZ7hWWaYZQe7tP1hL5A56FiWN5Q4MfLbV3j8sgOdj1bj8IPo14IZZtnBLnZqPUEvkNmryN6R9Kkf/uzB5V8rcGg85o1gB7vYyW6tT/fOi4dXTf38ohedj1w4OBbzVmAXO9mt/STmF3xO7v7Eibt/dOL0hAtN38W+VdjJbjoCvxPzF0jvsjWf/+Uguh6XYP+3sUvCfUBARoOom4eC3XTQtegCGReUyLJh9+yt3w+j8b4xLJ/cM6LiawGeowLiKiQopRIKjgjY2i3ozgaDDrronL/AynNKe9+TFrQ8WIGGe8aQ1A4ZsbxKhFwcnOQdInaP6nOB0EEXneoFnCeiIrz9zunLTxtRf1cIye47giqQixYwexe/Jpn7RV1WC1100m1I7bQ7992pxJcP87HrjhiSbYMi5EI/piIRVQMiUmtFJGwVUdKxsGdeL+LjUX0+ELropNuQcsrmOzfxGfbcVfDRbTEkJWdESIV+krb7Zym1IuK3+tdpO0U4NvupGtTnA6GLTroNKaccY72PP0XdLSks5T0SJI+gIhcK2NwrIblGQNwWQXd2KdBJt2FNR/Jk58SHqPlGCkv1dQn2UgFSwQKmQgG2jQK8HaK6r82Eg066DTnnVs8ce1iB6pvyK/GelWBeL0DM12PZIMB1SML2G/pcMOik2+DuXDXTOl6Gquvykijvl/F+kwhlkwBxnVFHeoOoywSDTroNq04mTbaNV6Lymum1SawSYPEakVInQswzzrOxW9ad1UIn3Yb4NvtY2/g2bBkxhaWgXUbOUUllU5+szpZXCVBKBXXNL6OQZ1TJbpN0eS100m2I+9zmaxytwJardpQPm0Oyol6EkGtUWblHUmcJHwjqo+A6ZefCvqtV1uUDoYtOug32Q1bnxp4c1Nxcg9IhS0iyWmQIa2NV5IJYeM6aEV8pwFZiRMEZE8Q8/x5Zd9qkywdCF510G6JOREWsPJY8XX/bg5IrlpBsuGSBZYMRxpzYeeaEgTOlTMDGy/p8IHTRSbf6Y2RtUtq3XfGgbCgJ3kFrSHLbzf5LZMcGxVxkRK7PrMsFQgdddM7/GioNSmRa63uzNTdyUXzJGpaiASsyj5iQtldSH4WUF4vU3RIyDsso7NOf10IHXXQu+kNiarQ1F3dlomxoBQoHbEvCvlmA2WvUzUPBbjro0v0jercp7R3LPvvEpj4X1l9KRH6f7ZVknbQg87hZNw8GO9lNB126CxBxl2OZsj9uqmTAicL+RORdVN4K7GInu+kIdC66AJHrFdna6JjydKfD05+Etb3KG8EOdrGT3Vqf7gJzn4RYb5twnkqGpz8Va3vj4b5gfy2YYZYd7NK+87AXIHxOxjpbs22fY9bpS0JubxKyexLg6nYgq9seFO7xDM8ywyw7Ap+5Ft1Ai7FOiYypVdrNe5XpxC8cWONLgLvbj6s7XmXuNfeSWuLAs8wwq+3TohuEImpHVER0tdUZs8Pmi66xjQk7lUl5jzJDuOZM3au2OnlWmw/F/5lnJo8xRKPbAAAAAElFTkSuQmCC" InformativeScreenshot="6a31e053bb7942baaf07ca73d351ae15.jpg" Reference="s7GfPwX_u0WE4GyZeCCuzA/DoDLXkhPGUCv0fZPmQ-RqA" Selector="&lt;wnd app='mmex.exe' cls='#32770' title='New Database Wizard' /&gt;" Version="V2">
+            <uix:TargetApp.Arguments>
+              <InArgument x:TypeArguments="x:String" />
+            </uix:TargetApp.Arguments>
+            <uix:TargetApp.WorkingDirectory>
+              <InArgument x:TypeArguments="x:String" />
+            </uix:TargetApp.WorkingDirectory>
+          </uix:TargetApp>
+        </uix:NApplicationCard.TargetApp>
+      </uix:NApplicationCard>
+    </Sequence>
+  </Sequence>
+</Activity>

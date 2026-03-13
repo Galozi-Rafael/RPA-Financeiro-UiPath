@@ -1,0 +1,13 @@
+﻿{
+  "Name": "BRL(1)",
+  "Type": "Element",
+  "Id": "ki91wxjvmEOeQ4WtvLwFGw",
+  "Reference": "s7GfPwX_u0WE4GyZeCCuzA/ki91wxjvmEOeQ4WtvLwFGw",
+  "ParentRef": "s7GfPwX_u0WE4GyZeCCuzA/DoDLXkhPGUCv0fZPmQ-RqA",
+  "Created": "2026-03-13T20:59:31.1290485Z",
+  "Updated": "2026-03-13T20:59:31.1290485Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.1.0.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="i4_VfjtWCkqRZapFGryLIA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="107928f4-89c1-49d2-b167-86874cca8c50" CvElementArea="153, 71, 201, 25" CvType="InputBox" DesignTimeRectangle="154, 72, 200, 23" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;wnd cls='wxWindow' title='panel' matching:title='fuzzy' fuzzylevel:title='0.0' /&gt;&lt;wnd cls='Edit' /&gt;" Guid="da6b9e46-f13a-421e-95d1-af2ad8823002" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='mmex.exe' cls='#32770' title='Add Account Wizard' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="107928f4-89c1-49d2-b167-86874cca8c50" CvTextArea="153, 47, 116, 13" CvTextArgument="Name of the Account" CvType="Text" DesignTimeRectangle="154, 46, 115, 16" ElementType="Text" FuzzySelectorArgument="&lt;wnd cls='wxWindow' title='panel' matching:title='fuzzy' fuzzylevel:title='0.0' /&gt;&lt;wnd cls='Static' title='Name of the Account' matching:title='fuzzy' fuzzylevel:title='0.0' automationid='-31950' check:text='Name of the Account' /&gt;" Guid="2b1b42d6-2b33-4e09-9109-d63863a272eb" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="fb9eebf5e0a58ed27b0d71364490e93d.jpg" xmlns="">0yurJrXXav0uGXEdBCs1QnQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

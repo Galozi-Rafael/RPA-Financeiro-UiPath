@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="ioTYpvWzNkakPoGPyqZ0Kg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="c53e8db6-f559-42de-89b4-8b8e52c5f3af" DesignTimeRectangle="25, 116, 219, 22" ElementType="ListItem" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;wnd cls='wxWindow' title='dataviewCtrl' /&gt;&lt;ctrl name='dataviewCtrl' role='list' /&gt;&lt;ctrl role='list item' aastate='focalizável, selecionável' /&gt;" Guid="cb2fc3c0-c3b8-4288-ad8c-b0419f2ca47e" ScopeSelectorArgument="&lt;wnd app='mmex.exe' cls='#32770' title='Currency Manager' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None">
+      <imageRef attrName="InformativeScreenshot" originalValue="7e23d8ebd8a2607059307d44bc88d644.jpg" xmlns="">0mjx4hEAqrEOtZZJ5d5U6Kw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
