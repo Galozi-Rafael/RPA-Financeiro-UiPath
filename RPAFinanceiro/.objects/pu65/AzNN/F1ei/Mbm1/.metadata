@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Preset(1)",
+  "Type": "Element",
+  "TaxonomyType": "Dropdown",
+  "Id": "Mbm1AZOJ80q_R5oI0nfB-A",
+  "Reference": "s7GfPwX_u0WE4GyZeCCuzA/Mbm1AZOJ80q_R5oI0nfB-A",
+  "ParentRef": "s7GfPwX_u0WE4GyZeCCuzA/F1eisAjvgUiT8b6vvbn2TQ",
+  "Created": "2026-03-13T23:47:07.6199851Z",
+  "Updated": "2026-03-13T23:47:07.6199851Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.1.0.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

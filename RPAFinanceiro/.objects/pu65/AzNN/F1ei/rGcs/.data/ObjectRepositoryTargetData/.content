@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="a9Ami_In8E2dhrWB3x6v2w" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="d8424d7d-3641-4335-82e0-fb07234b11b7" CvElementArea="85, 111, 211, 25" CvType="InputBox" DesignTimeRectangle="279, 113, 15, 21" ElementType="Button" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;wnd cls='wxWindow' title='panel' matching:title='fuzzy' fuzzylevel:title='0.0' /&gt;&lt;wnd ctrlid='5102' matching:ctrlid='fuzzy' fuzzylevel:ctrlid='0.0' /&gt;&lt;ctrl name='Preset:' role='combo box' matching:name='fuzzy' fuzzylevel:name='0.0' /&gt;&lt;ctrl automationid='DropDown' role='push button' matching:automationid='fuzzy' fuzzylevel:automationid='0.0' check:text='Abrir' /&gt;" Guid="5f15b3c7-d6eb-4bd3-91b7-5877b6b7ed11" ScopeSelectorArgument="&lt;wnd app='mmex.exe' cls='#32770' title='Import from CSV file' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="d8424d7d-3641-4335-82e0-fb07234b11b7" CvTextArea="17, 117, 37, 13" CvTextArgument="Preset:" CvType="Text" DesignTimeRectangle="18, 116, 57, 16" ElementType="Text" FuzzySelectorArgument="&lt;wnd cls='wxWindow' title='panel' matching:title='fuzzy' fuzzylevel:title='0.0' /&gt;&lt;wnd cls='Static' title='Preset:' matching:title='fuzzy' fuzzylevel:title='0.0' automationid='-31926' check:text='Preset:' /&gt;" Guid="595a6274-241a-4d57-b3f5-94ec8232baa4" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="de1e7ae13c0fe3d821c3edc190f194d4.jpg" xmlns="">0GnF3spyFB0OwRsrfQhFmHQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

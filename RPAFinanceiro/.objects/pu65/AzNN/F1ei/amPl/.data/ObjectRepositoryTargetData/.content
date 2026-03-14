@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="9nbJ5OU4xESRpET1ZgChSg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="6c693f7a-9b1e-44eb-8edb-4c2aa750ebde" DesignTimeRectangle="398, 235, 68, 23" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;wnd aaname='Import' cls='DirectUIHWND' /&gt;&lt;wnd cls='Button' title='OK' automationid='CommandButton_1' /&gt;" Guid="de3b10ae-61e1-4c46-b7bc-0b4b97c75f35" ScopeSelectorArgument="&lt;wnd app='mmex.exe' cls='#32770' title='Import' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None">
+      <imageRef attrName="InformativeScreenshot" originalValue="8bd5fd1dd93b837e851c8160e06e125f.jpg" xmlns="">0gZFqz7-uJU-whp0Bt6cO3A</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

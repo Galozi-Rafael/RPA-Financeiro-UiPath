@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="ZTOwYLe1WEelcJ-jyl4VuQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="8ec928d2-ad0c-434a-a623-a20af8e960b2" DesignTimeRectangle="8, 31, 32, 19" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;ctrl automationid='MenuBar' name='Aplicativo' role='menu bar' /&gt;&lt;ctrl name='File' role='menu item' text='File' /&gt;" Guid="d48096ae-f6f3-41c0-8931-77a8cf760b0c" ScopeSelectorArgument="&lt;wnd app='mmex.exe' cls='wxWindowNR' title='New Database202603132018.mmb - Money Manager Ex (1.9.2 64-bit) W*' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None">
+      <imageRef attrName="InformativeScreenshot" originalValue="4ddb04102a3fd22ff1459964da2a537c.jpg" xmlns="">0UkbvdnbkA0OwQDJso5qh4Q</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

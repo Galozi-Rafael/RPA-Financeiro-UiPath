@@ -1,0 +1,13 @@
+﻿{
+  "Name": "New Database202603132018.mmb - Money Manager ",
+  "Type": "Screen",
+  "Id": "F1eisAjvgUiT8b6vvbn2TQ",
+  "Reference": "s7GfPwX_u0WE4GyZeCCuzA/F1eisAjvgUiT8b6vvbn2TQ",
+  "ParentRef": "s7GfPwX_u0WE4GyZeCCuzA/AzNNHYwNyUeW8rydh1VJRw",
+  "Created": "2026-03-13T23:19:56.047581Z",
+  "Updated": "2026-03-13T23:19:56.047581Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.1.0.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

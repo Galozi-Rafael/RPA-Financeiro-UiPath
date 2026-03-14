@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="muDtF1yQuUOGlXEpeDUx2w" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="ce86e957-41d1-415d-b5a8-b928a580d4ac" DesignTimeRectangle="492, 801, 75, 23" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;wnd cls='wxWindow' title='panel' /&gt;&lt;wnd ctrlid='10091' title='panel' automationid='10091' idx='3' /&gt;&lt;wnd ctrlid='5101' title='&amp;amp;Close ' /&gt;" Guid="6c2e2bbd-8b93-423e-9cbc-8c464aa52750" ScopeSelectorArgument="&lt;wnd app='mmex.exe' cls='#32770' title='Import from CSV file' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None">
+      <imageRef attrName="InformativeScreenshot" originalValue="958aeb5dc4a682ec4b884730985370d7.jpg" xmlns="">0PCtrOMEQmE2lR2LS1kRtmA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

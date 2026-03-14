@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="TiweBDCYDkSHzkmtre50oQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="509ea0e5-4955-410d-be96-606e09c5cef4" CvElementArea="85, 111, 212, 25" CvType="InputBox" DesignTimeRectangle="85, 112, 210, 23" ElementType="DropDown" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;wnd cls='wxWindow' title='panel' matching:title='fuzzy' fuzzylevel:title='0.0' /&gt;&lt;wnd ctrlid='5102' matching:ctrlid='fuzzy' fuzzylevel:ctrlid='0.0' /&gt;&lt;ctrl name='Preset:' role='combo box' automationid='' matching:name='fuzzy' fuzzylevel:name='0.0' matching:automationid='fuzzy' fuzzylevel:automationid='0.0' /&gt;" Guid="aa8a45aa-e68c-4517-a0d1-1db814e41698" ScopeSelectorArgument="&lt;wnd app='mmex.exe' cls='#32770' title='Import from CSV file' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="509ea0e5-4955-410d-be96-606e09c5cef4" CvTextArea="17, 117, 37, 12" CvTextArgument="Preset:" CvType="Text" DesignTimeRectangle="18, 116, 57, 16" ElementType="Text" FuzzySelectorArgument="&lt;wnd cls='wxWindow' title='panel' matching:title='fuzzy' fuzzylevel:title='0.0' /&gt;&lt;wnd cls='Static' title='Preset:' matching:title='fuzzy' fuzzylevel:title='0.0' check:text='Preset:' /&gt;" Guid="ff704865-4c9c-4826-8547-ef7b550e928f" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="e19d273e300523c25fb999ff5dbc1817.jpg" xmlns="">09LvEvS8vAU-oKQ82upgr0Q</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">SelectItem</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

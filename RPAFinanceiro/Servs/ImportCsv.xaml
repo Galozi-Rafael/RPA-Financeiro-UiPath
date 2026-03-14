@@ -1,0 +1,275 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="ImportCsv" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:this="clr-namespace:" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="in_CSVFilePath" Type="InArgument(x:String)" />
+  </x:Members>
+  <this:ImportCsv.in_CSVFilePath>
+    <InArgument x:TypeArguments="x:String" />
+  </this:ImportCsv.in_CSVFilePath>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap2010:WorkflowViewState.IdRef>ImportCsv_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="ImportCsv" sap:VirtualizedContainerService.HintSize="1245,3367" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence DisplayName="Sequence - Import .CSV" sap:VirtualizedContainerService.HintSize="486,3344" sap2010:WorkflowViewState.IdRef="Sequence_2">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[UiPath.UIAutomationNext.Enums.NAppCloseMode.Never]" DisplayName="New Database202603132018.mmb - Money Manager" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="452,3261" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" OpenMode="[UiPath.UIAutomationNext.Enums.NAppOpenMode.Never]" ScopeGuid="52c8737a-b41e-4e86-9d9f-e33d4eda3142" Version="V2">
+        <uix:NApplicationCard.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,3015" sap2010:WorkflowViewState.IdRef="Sequence_3">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'File'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,194" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="52c8737a-b41e-4e86-9d9f-e33d4eda3142" Version="V5">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable CVScreenId="8ec928d2-ad0c-434a-a623-a20af8e960b2" ContentHash="ZTOwYLe1WEelcJ-jyl4VuQ" DesignTimeRectangle="8, 31, 32, 19" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;ctrl automationid='MenuBar' name='Aplicativo' role='menu bar' /&gt;&lt;ctrl name='File' role='menu item' text='File' /&gt;" Guid="d48096ae-f6f3-41c0-8931-77a8cf760b0c" InformativeScreenshot="4ddb04102a3fd22ff1459964da2a537c.jpg" Reference="s7GfPwX_u0WE4GyZeCCuzA/4zhLQzhwXku3nRzwGHtUOw" ScopeSelectorArgument="&lt;wnd app='mmex.exe' cls='wxWindowNR' title='New Database202603132018.mmb - Money Manager Ex (1.9.2 64-bit) W*' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None" />
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Import from'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,194" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="52c8737a-b41e-4e86-9d9f-e33d4eda3142" Version="V5">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable CVScreenId="77dee509-8103-4f09-ba29-838b0b1d859a" ContentHash="Fbocud0uFEm98t2LAkSjqw" CvElementArea="208, 134, 15, 17" CvTextArea="37, 135, 67, 15" CvTextArgument="Import from" CvType="ArrowButton" DesignTimeRectangle="3, 131, 228, 22" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;ctrl name='File' role='popup menu' /&gt;&lt;ctrl name='Import from' role='menu item' /&gt;" Guid="4c81d863-4895-4b18-8d6a-814e1789fd35" InformativeScreenshot="6526b5f0228bb978009754b0a78247d4.jpg" Reference="s7GfPwX_u0WE4GyZeCCuzA/1co1LkD1D0erZXV4j_cp2w" ScopeSelectorArgument="&lt;wnd app='mmex.exe' cls='#32768' idx='*' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'CSV File…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,194" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="52c8737a-b41e-4e86-9d9f-e33d4eda3142" Version="V5">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable CVScreenId="64146e26-fa31-4d9d-8d0d-8766db1501a5" ContentHash="AYy_S0d9BEKr6nFQznrkVg" DesignTimeRectangle="3, 3, 147, 22" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;ctrl name='Import from' role='popup menu' /&gt;&lt;ctrl automationid='6043' /&gt;" Guid="1fc13a84-2288-4235-a6f9-4b0c6f5dd3f6" InformativeScreenshot="7188e299fbc02e77fa09dff4299e4eb5.jpg" Reference="s7GfPwX_u0WE4GyZeCCuzA/pOI_kmIFUkC26Ntf6eUpOg" ScopeSelectorArgument="&lt;wnd app='mmex.exe' cls='#32768' idx='*' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None" />
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'unchecked'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,194" sap2010:WorkflowViewState.IdRef="NClick_4" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="52c8737a-b41e-4e86-9d9f-e33d4eda3142" Version="V5">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable CVScreenId="02647829-8eab-48b8-bc91-f4becd544916" ContentHash="gg79_ZwQxUm9hs_fbNQVEA" DesignTimeRectangle="512, 42, 75, 23" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;wnd cls='wxWindow' title='panel' /&gt;&lt;wnd cls='wxWindow' title='panel' /&gt;&lt;wnd ctrlid='10100' title='&amp;amp;Browse…' automationid='10100' /&gt;" Guid="75b6e12a-5546-45f7-8f51-4fa2580e5958" InformativeScreenshot="ad8266a97ae3db5507d06caedbbec2e7.jpg" Reference="s7GfPwX_u0WE4GyZeCCuzA/fDV9QXMrQUi4XjqIp6urZA" ScopeSelectorArgument="&lt;wnd app='mmex.exe' cls='#32770' title='Import from CSV file' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None" />
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into '&amp;Nome'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,246" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="SameAsCard" ScopeIdentifier="52c8737a-b41e-4e86-9d9f-e33d4eda3142" Text="[in_CSVFilePath]" Version="V5">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable CVScreenId="b442410a-702f-476c-be40-2a94c1b819d1" ContentHash="vJ4wjLnbVkiItG_g0YKBIA" CvElementArea="176, 459, 559, 26" CvType="InputBox" DesignTimeRectangle="183, 465, 532, 15" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;wnd ctrlid='1148' matching:ctrlid='fuzzy' fuzzylevel:ctrlid='0.0' /&gt;&lt;wnd ctrlid='1148' matching:ctrlid='fuzzy' fuzzylevel:ctrlid='0.0' /&gt;&lt;wnd ctrlid='1148' matching:ctrlid='fuzzy' fuzzylevel:ctrlid='0.0' /&gt;" Guid="048f78d0-0495-4b5a-9258-f5d7fe4d99bd" InformativeScreenshot="3aa25f44736333a1dc583e7418c81aaa.jpg" IsResponsive="True" Reference="s7GfPwX_u0WE4GyZeCCuzA/mofKZ3KJmk-XcNaEIv_zFA" ScopeSelectorArgument="&lt;wnd app='mmex.exe' cls='#32770' title='Choose CSV data file to import' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="b442410a-702f-476c-be40-2a94c1b819d1" CvTextArea="136, 465, 39, 12" CvTextArgument="Nome:" CvType="Text" DesignTimeRectangle="138, 464, 36, 15" ElementType="Text" FuzzySelectorArgument="&lt;wnd ctrlid='1090' matching:ctrlid='fuzzy' fuzzylevel:ctrlid='0.0' title='&amp;amp;Nome:' matching:title='fuzzy' fuzzylevel:title='0.0' automationid='1090' check:text='&amp;amp;Nome:' /&gt;" Guid="ca185dc9-6185-4404-89e9-d99050ab5e0d" SearchSteps="FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NTypeInto.Target>
+                <uix:NTypeInto.VerifyOptions>
+                  <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionTypeIntoOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                  </uix:VerifyExecutionTypeIntoOptions>
+                </uix:NTypeInto.VerifyOptions>
+              </uix:NTypeInto>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '&amp;Abrir'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,194" sap2010:WorkflowViewState.IdRef="NClick_5" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="52c8737a-b41e-4e86-9d9f-e33d4eda3142" Version="V5">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable CVScreenId="b442410a-702f-476c-be40-2a94c1b819d1" ContentHash="LE0-rFqbh0iqDQgn0WYGzw" DesignTimeRectangle="747, 489, 88, 26" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;wnd ctrlid='1' title='&amp;amp;Abrir' automationid='1' /&gt;" Guid="2cf5c14d-7776-4d6c-b2a9-241437b388e6" InformativeScreenshot="0441d12f1576b1d01c4f912c073a0a25.jpg" Reference="s7GfPwX_u0WE4GyZeCCuzA/N_6QspfUAU27i5Z46BN1ZA" ScopeSelectorArgument="&lt;wnd app='mmex.exe' cls='#32770' title='Choose CSV data file to import' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None" />
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NSelectItem DisplayName="Select Item 'Account'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,195" sap2010:WorkflowViewState.IdRef="NSelectItem_1" Item="Nova conta teste" ScopeIdentifier="52c8737a-b41e-4e86-9d9f-e33d4eda3142" Version="V5">
+                <uix:NSelectItem.Items>
+                  <scg:List x:TypeArguments="x:String" Capacity="1">
+                    <x:String>Nova conta teste</x:String>
+                  </scg:List>
+                </uix:NSelectItem.Items>
+                <uix:NSelectItem.Target>
+                  <uix:TargetAnchorable CVScreenId="2bec3df9-4668-48db-b707-35867aff8093" ContentHash="tYNSpLeaVUG5TIryT3h1RQ" CvElementArea="85, 75, 280, 25" CvType="InputBox" DesignTimeRectangle="85, 76, 278, 23" ElementType="DropDown" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;wnd cls='wxWindow' title='panel' matching:title='fuzzy' fuzzylevel:title='0.0' /&gt;&lt;wnd ctrlid='10103' matching:ctrlid='fuzzy' fuzzylevel:ctrlid='0.0' /&gt;&lt;ctrl name='Account: ' role='combo box' automationid='' matching:name='fuzzy' fuzzylevel:name='0.0' matching:automationid='fuzzy' fuzzylevel:automationid='0.0' /&gt;" Guid="d8b793f1-b7a4-4ca3-bd96-ff3378450724" InformativeScreenshot="4efbc01805d49e82e2838bd9a5cf3de6.jpg" Reference="s7GfPwX_u0WE4GyZeCCuzA/QPW3ukEiIUWVV_0AyWoVnA" ScopeSelectorArgument="&lt;wnd app='mmex.exe' cls='#32770' title='Import from CSV file' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="2bec3df9-4668-48db-b707-35867aff8093" CvTextArea="16, 80, 50, 12" CvTextArgument="Account:" CvType="Text" DesignTimeRectangle="18, 79, 57, 16" ElementType="Text" FuzzySelectorArgument="&lt;wnd cls='wxWindow' title='panel' matching:title='fuzzy' fuzzylevel:title='0.0' /&gt;&lt;wnd cls='Static' title='Account: ' matching:title='fuzzy' fuzzylevel:title='0.0' check:text='Account:' /&gt;" Guid="c1106ec1-68d3-4272-b4de-73690701a420" SearchSteps="FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NSelectItem.Target>
+              </uix:NSelectItem>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Account'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,194" sap2010:WorkflowViewState.IdRef="NClick_12" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="52c8737a-b41e-4e86-9d9f-e33d4eda3142" Version="V5">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable CVScreenId="a46c6bf4-0835-4e65-aa9c-f9ab795dfad5" ContentHash="0-4dSmlvCk-wcbJzEBp81A" CvElementArea="84, 75, 281, 25" CvType="InputBox" DesignTimeRectangle="85, 76, 278, 23" ElementType="DropDown" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;wnd cls='wxWindow' title='panel' matching:title='fuzzy' fuzzylevel:title='0.0' /&gt;&lt;wnd ctrlid='10103' matching:ctrlid='fuzzy' fuzzylevel:ctrlid='0.0' automationid='10103' /&gt;" Guid="615b9938-2c56-4d93-9339-38d6a3d203f8" InformativeScreenshot="7faa3a29b16f079cdb628d28b6420b07.jpg" Reference="s7GfPwX_u0WE4GyZeCCuzA/I-MVl1A4B0WUlTH_UuHzkQ" ScopeSelectorArgument="&lt;wnd app='mmex.exe' cls='#32770' title='Import from CSV file' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="None">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                        <uix:Target CVScreenId="a46c6bf4-0835-4e65-aa9c-f9ab795dfad5" CvTextArea="16, 80, 50, 12" CvTextArgument="Account:" CvType="Text" DesignTimeRectangle="18, 79, 57, 16" ElementType="Text" FuzzySelectorArgument="&lt;wnd cls='wxWindow' title='panel' matching:title='fuzzy' fuzzylevel:title='0.0' /&gt;&lt;wnd cls='Static' title='Account: ' matching:title='fuzzy' fuzzylevel:title='0.0' automationid='-31927' check:text='Account:' /&gt;" Guid="3ea68238-8bc4-4dd5-8144-ce4b3b4c6842" SearchSteps="FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="[UiPath.UIAutomationNext.Enums.NClickType.Double]" DisplayName="Click 'mmex.exe'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,194" sap2010:WorkflowViewState.IdRef="NClick_13" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="52c8737a-b41e-4e86-9d9f-e33d4eda3142" Version="V5">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable CVScreenId="92679548-97d7-4dba-90e9-edebc0e6b616" ContentHash="bMzrWR58cUyA04ptdUQpNA" CvElementArea="5, 1, 273, 16" CvType="InputBox" DesignTimeRectangle="0, 0, 278, 17" ElementType="List" ElementVisibilityArgument="Interactive" Guid="5ff68a81-0e39-46ad-832c-f6b729a7e375" InformativeScreenshot="90b215f9ed15d2a348dd4f42c223fced.jpg" Reference="s7GfPwX_u0WE4GyZeCCuzA/RRXCmPgNSU6xCf8owCjMXg" ScopeSelectorArgument="&lt;wnd app='mmex.exe' cls='ComboLBox' idx='*' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NSelectItem AlterIfDisabled="True" DisplayName="Select Item 'Preset'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,195" sap2010:WorkflowViewState.IdRef="NSelectItem_2" Item="preset" ScopeIdentifier="52c8737a-b41e-4e86-9d9f-e33d4eda3142" Version="V5">
+                <uix:NSelectItem.Items>
+                  <scg:List x:TypeArguments="x:String" Capacity="1">
+                    <x:String>preset</x:String>
+                  </scg:List>
+                </uix:NSelectItem.Items>
+                <uix:NSelectItem.Target>
+                  <uix:TargetAnchorable CVScreenId="509ea0e5-4955-410d-be96-606e09c5cef4" ContentHash="TiweBDCYDkSHzkmtre50oQ" CvElementArea="85, 111, 212, 25" CvType="InputBox" DesignTimeRectangle="85, 112, 210, 23" ElementType="DropDown" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;wnd cls='wxWindow' title='panel' matching:title='fuzzy' fuzzylevel:title='0.0' /&gt;&lt;wnd ctrlid='5102' matching:ctrlid='fuzzy' fuzzylevel:ctrlid='0.0' /&gt;&lt;ctrl name='Preset:' role='combo box' automationid='' matching:name='fuzzy' fuzzylevel:name='0.0' matching:automationid='fuzzy' fuzzylevel:automationid='0.0' /&gt;" Guid="aa8a45aa-e68c-4517-a0d1-1db814e41698" InformativeScreenshot="e19d273e300523c25fb999ff5dbc1817.jpg" Reference="s7GfPwX_u0WE4GyZeCCuzA/y3urARtY6UW7OxMLZPCmhQ" ScopeSelectorArgument="&lt;wnd app='mmex.exe' cls='#32770' title='Import from CSV file' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="509ea0e5-4955-410d-be96-606e09c5cef4" CvTextArea="17, 117, 37, 12" CvTextArgument="Preset:" CvType="Text" DesignTimeRectangle="18, 116, 57, 16" ElementType="Text" FuzzySelectorArgument="&lt;wnd cls='wxWindow' title='panel' matching:title='fuzzy' fuzzylevel:title='0.0' /&gt;&lt;wnd cls='Static' title='Preset:' matching:title='fuzzy' fuzzylevel:title='0.0' check:text='Preset:' /&gt;" Guid="ff704865-4c9c-4826-8547-ef7b550e928f" SearchSteps="FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NSelectItem.Target>
+              </uix:NSelectItem>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Preset'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,194" sap2010:WorkflowViewState.IdRef="NClick_10" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="52c8737a-b41e-4e86-9d9f-e33d4eda3142" Version="V5">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable CVScreenId="227b5b33-e642-4279-a408-00fc4b6c857f" ContentHash="uEKK889OF0qMNsYJo9f5jg" DesignTimeRectangle="85, 112, 210, 23" ElementType="DropDown" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;wnd cls='wxWindow' title='panel' matching:title='fuzzy' fuzzylevel:title='0.0' /&gt;&lt;wnd ctrlid='5102' matching:ctrlid='fuzzy' fuzzylevel:ctrlid='0.0' automationid='5102' /&gt;" Guid="66558d95-d47d-4120-9999-679db16599ba" InformativeScreenshot="b6dbef1fda48ebe9c707e7065136b9a5.jpg" Reference="s7GfPwX_u0WE4GyZeCCuzA/Mbm1AZOJ80q_R5oI0nfB-A" ScopeSelectorArgument="&lt;wnd app='mmex.exe' cls='#32770' title='Import from CSV file' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="None">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="227b5b33-e642-4279-a408-00fc4b6c857f" CvTextArea="17, 117, 37, 13" CvTextArgument="Preset:" CvType="Text" DesignTimeRectangle="18, 116, 57, 16" ElementType="Text" FuzzySelectorArgument="&lt;wnd cls='wxWindow' title='panel' matching:title='fuzzy' fuzzylevel:title='0.0' /&gt;&lt;wnd cls='Static' title='Preset:' matching:title='fuzzy' fuzzylevel:title='0.0' automationid='-31926' check:text='Preset:' /&gt;" Guid="c8166bdf-6b8b-4ea6-aacc-16b9e7ad72bf" SearchSteps="FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="[UiPath.UIAutomationNext.Enums.NClickType.Double]" DisplayName="Click 'Preset'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,194" sap2010:WorkflowViewState.IdRef="NClick_11" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="52c8737a-b41e-4e86-9d9f-e33d4eda3142" Version="V5">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable CVScreenId="db13d975-60d3-44bd-b978-b3e8a3fe897d" CvElementArea="2, 1, 208, 16" CvType="InputBox" DesignTimeRectangle="0, 0, 210, 17" ElementType="List" ElementVisibilityArgument="Interactive" Guid="f24a2af6-08dd-4279-bc4b-c8a181567a56" InformativeScreenshot="0686750bb1403d4d2ed9f585e2bb9b3a.jpg" ScopeSelectorArgument="&lt;wnd app='mmex.exe' cls='ComboLBox' idx='*' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="None" />
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'unchecked(1)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,194" sap2010:WorkflowViewState.IdRef="NClick_6" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="52c8737a-b41e-4e86-9d9f-e33d4eda3142" Version="V5">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable CVScreenId="58a2b976-91e8-4d47-aabf-e1d81c4df3dd" ContentHash="0cUKjEkPtk-vTVmgr-pusQ" DesignTimeRectangle="407, 801, 75, 23" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;wnd cls='wxWindow' title='panel' /&gt;&lt;wnd ctrlid='10091' title='panel' idx='3' /&gt;&lt;wnd ctrlid='10094' title='&amp;amp;Import' automationid='10094' /&gt;" Guid="46bb3724-9486-4d7e-b9b1-5df6f88f38b6" InformativeScreenshot="478f3ec975fcc6d1eb5dfacf55047880.jpg" Reference="s7GfPwX_u0WE4GyZeCCuzA/QZ3pzETqzUW-EkZ8zMN4Mw" ScopeSelectorArgument="&lt;wnd app='mmex.exe' cls='#32770' title='Import from CSV file' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None" />
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'OK'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,194" sap2010:WorkflowViewState.IdRef="NClick_7" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="52c8737a-b41e-4e86-9d9f-e33d4eda3142" Version="V5">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable CVScreenId="6c693f7a-9b1e-44eb-8edb-4c2aa750ebde" ContentHash="9nbJ5OU4xESRpET1ZgChSg" DesignTimeRectangle="398, 235, 68, 23" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;wnd aaname='Import' cls='DirectUIHWND' /&gt;&lt;wnd cls='Button' title='OK' automationid='CommandButton_1' /&gt;" Guid="de3b10ae-61e1-4c46-b7bc-0b4b97c75f35" InformativeScreenshot="8bd5fd1dd93b837e851c8160e06e125f.jpg" Reference="s7GfPwX_u0WE4GyZeCCuzA/amPl12OQ7kqz4nP2A8u2RA" ScopeSelectorArgument="&lt;wnd app='mmex.exe' cls='#32770' title='Import' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None" />
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'unchecked(2)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,185" sap2010:WorkflowViewState.IdRef="NClick_8" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="52c8737a-b41e-4e86-9d9f-e33d4eda3142" Version="V5">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable CVScreenId="ce86e957-41d1-415d-b5a8-b928a580d4ac" ContentHash="muDtF1yQuUOGlXEpeDUx2w" DesignTimeRectangle="492, 801, 75, 23" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;wnd cls='wxWindow' title='panel' /&gt;&lt;wnd ctrlid='10091' title='panel' automationid='10091' idx='3' /&gt;&lt;wnd ctrlid='5101' title='&amp;amp;Close ' /&gt;" Guid="6c2e2bbd-8b93-423e-9cbc-8c464aa52750" InformativeScreenshot="958aeb5dc4a682ec4b884730985370d7.jpg" Reference="s7GfPwX_u0WE4GyZeCCuzA/uDVI8XaicEKls7Y9mri4yQ" ScopeSelectorArgument="&lt;wnd app='mmex.exe' cls='#32770' title='Import from CSV file' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None" />
+                </uix:NClick.Target>
+              </uix:NClick>
+            </Sequence>
+          </ActivityAction>
+        </uix:NApplicationCard.Body>
+        <uix:NApplicationCard.OCREngine>
+          <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
+            <ActivityFunc.Argument>
+              <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+            </ActivityFunc.Argument>
+          </ActivityFunc>
+        </uix:NApplicationCard.OCREngine>
+        <uix:NApplicationCard.TargetApp>
+          <uix:TargetApp Area="-8, -8, 1936, 1048" ContentHash="Csm5n-xJMU2KVzoPBjarSQ" FilePath="C:\Program Files\Money Manager EX\bin\mmex.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAASvSURBVFhHrZT7T1NnHMb710jP+57TlnNaQDrwhjqg5VKhBSsIiDK8gHObqEOHM84B4maMCqgbZQh4AfEyUaO74Fw244zRJW7ZL1uMWbZf9ic8y3MaSzmnrRD5Jp/k9H2/z/M5SZs6HAuc4JSOsqs+NEyvRvt3VSZ85hnvrPuLMoFJA233Qhh61oWn/0zir/+m8PzfITx62WfCZ57xbujZQXOXGWvPgqf0so72u9X48cV5PPm7H1eeN+H4Tzp6HixJCe+4w11mmGWHtXdeE5rIx9Rvn+PxywEMPlqNI/eXLAhmmGUHu6z9GSc6VYQf/hzGpV+bcXgm641gB7vYafWknNrJVfj5xQgGHwVw6PusRYFd7GS31TdngmP5uPPHIE49DKDrW+eiwk5202H1mlM0pOPLXw5h6HE9DnzjnBfBgwJr90nbeTrYTQddVr+jcTKIm78fQec9JSMf3lXQ/IVAuE8gp1mF0aCi+qjAlpiw7aaCDrrmyFeeMzD6pBvd91dg310lLe0TCpa2Smi1qSnYIbF72p5Lhg666Ey8QHSsGJeedqLjjkjL7tvCFGg1s7ijcz+TkgPSlrVCF52JF9h/uwWfPajCB7dlWrZelNAicVw1Eq3jEsvaJfK2SNQPzN6510u8P23PJ0MXnaa88KSOcw8/xp47Bt67JdNSf0ZCjcTxb4ufFbZL5G6JPy/fJeHbFKf1oj2fDF100u0oPOnDyOOPsPOmmpGmYRVqWJhoEYFNIyoK2gRyNgvb7nygk27HmoECDD58F21fqxnZfk2Ft0FArZ7FFRHQ6wSiA9K8t2YyQSfdjvJzq3HsQTO239BeS/SsCvd6AVllx7NBIHBYxbbr9lwq6KTbERxchZ6ZRrRe0+ZF05iGt7skjI0Ccp1io2iftGVSQSfdjlUn/OidaUHLVdeCyW8V8EQVFO6UkCElQV1Ms+1aoZNuR26vF70zW7F5ypWR6tMayvtUk42jmnm2tFXAaBDmM3+MIqSYlPWqtrwVOul25Hyio3O6GZuveNE06U7Lig4JUamYrNyjmmd57wjzq+Bz4a7Z+0CPZssnQxeddJv/BXXD5Wi7sQYNE560lHZrEBVOE63aifBZN3JbBPR6BdVnXJCh+B1Zd8plyydDF52Jf8KVxwrQcSuM+suetGy44IFngwKl3JnglTD5zGgUqLtkzydDF52JF8juMrD1chiNE35EL2anpfK0O/4SZc6UuGsUVPa7bblk6KCLzsQLcJb3vIW265WovZCdkZrxbJQcdWH5XtX8KtSQE8t2q1h7RENk1L5vhQ665sg5rk4dtUMlaJxYgci4Pi+8mwTcUcV2ng5200GX1W+OZ78XG0cDWH8hH1Wj+mspPeFByXG37TwV7GQ3HVbvnDEO5KB+vBiRsXyEzhuLArvYyW6rL+Vkd/oQjhUhPOZHxYjxRrCDXey0ejKO7NBRfLIA4bFlqBjJRfAr74Jghll2sMvaP69RdurQ9/tQ3O9H5YgfZcN5CMR8KI15U8I77nCXGWbZYe1d8GS1G3DvNZD/qQ9r+vMQjMUJxHJNXn3mnb87x9xlxtqzKJO1Q8eSNh1ilwFtTxw+84x31v3Xzf8CGREbS7XTnQAAAABJRU5ErkJggg==" InformativeScreenshot="1ca3497b94a612ec9a3d1a3a6e584e6f.jpg" Reference="s7GfPwX_u0WE4GyZeCCuzA/F1eisAjvgUiT8b6vvbn2TQ" Selector="&lt;wnd app='mmex.exe' cls='wxWindowNR' title='*.mmb - Money Manager Ex (1.9.2 64-bit) W*' /&gt;" Version="V2">
+            <uix:TargetApp.Arguments>
+              <InArgument x:TypeArguments="x:String" />
+            </uix:TargetApp.Arguments>
+          </uix:TargetApp>
+        </uix:NApplicationCard.TargetApp>
+      </uix:NApplicationCard>
+    </Sequence>
+  </Sequence>
+</Activity>

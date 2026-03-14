@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Account(1)",
+  "Type": "Element",
+  "TaxonomyType": "Dropdown",
+  "Id": "I-MVl1A4B0WUlTH_UuHzkQ",
+  "Reference": "s7GfPwX_u0WE4GyZeCCuzA/I-MVl1A4B0WUlTH_UuHzkQ",
+  "ParentRef": "s7GfPwX_u0WE4GyZeCCuzA/F1eisAjvgUiT8b6vvbn2TQ",
+  "Created": "2026-03-13T23:59:43.2126755Z",
+  "Updated": "2026-03-13T23:59:43.2126755Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.1.0.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

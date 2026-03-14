@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="Fbocud0uFEm98t2LAkSjqw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="77dee509-8103-4f09-ba29-838b0b1d859a" CvElementArea="208, 134, 15, 17" CvTextArea="37, 135, 67, 15" CvTextArgument="Import from" CvType="ArrowButton" DesignTimeRectangle="3, 131, 228, 22" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;ctrl name='File' role='popup menu' /&gt;&lt;ctrl name='Import from' role='menu item' /&gt;" Guid="4c81d863-4895-4b18-8d6a-814e1789fd35" ScopeSelectorArgument="&lt;wnd app='mmex.exe' cls='#32768' idx='*' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="6526b5f0228bb978009754b0a78247d4.jpg" xmlns="">04uiSQMf_W06EylwLhQBrCg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

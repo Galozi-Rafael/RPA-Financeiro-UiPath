@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="AYy_S0d9BEKr6nFQznrkVg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="64146e26-fa31-4d9d-8d0d-8766db1501a5" DesignTimeRectangle="3, 3, 147, 22" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;ctrl name='Import from' role='popup menu' /&gt;&lt;ctrl automationid='6043' /&gt;" Guid="1fc13a84-2288-4235-a6f9-4b0c6f5dd3f6" ScopeSelectorArgument="&lt;wnd app='mmex.exe' cls='#32768' idx='*' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None">
+      <imageRef attrName="InformativeScreenshot" originalValue="7188e299fbc02e77fa09dff4299e4eb5.jpg" xmlns="">0020R2GeF7kOw24WIxELpAQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

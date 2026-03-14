@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="vJ4wjLnbVkiItG_g0YKBIA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="b442410a-702f-476c-be40-2a94c1b819d1" CvElementArea="176, 459, 559, 26" CvType="InputBox" DesignTimeRectangle="183, 465, 532, 15" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;wnd ctrlid='1148' matching:ctrlid='fuzzy' fuzzylevel:ctrlid='0.0' /&gt;&lt;wnd ctrlid='1148' matching:ctrlid='fuzzy' fuzzylevel:ctrlid='0.0' /&gt;&lt;wnd ctrlid='1148' matching:ctrlid='fuzzy' fuzzylevel:ctrlid='0.0' /&gt;" Guid="048f78d0-0495-4b5a-9258-f5d7fe4d99bd" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='mmex.exe' cls='#32770' title='Choose CSV data file to import' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="b442410a-702f-476c-be40-2a94c1b819d1" CvTextArea="136, 465, 39, 12" CvTextArgument="Nome:" CvType="Text" DesignTimeRectangle="138, 464, 36, 15" ElementType="Text" FuzzySelectorArgument="&lt;wnd ctrlid='1090' matching:ctrlid='fuzzy' fuzzylevel:ctrlid='0.0' title='&amp;amp;Nome:' matching:title='fuzzy' fuzzylevel:title='0.0' automationid='1090' check:text='&amp;amp;Nome:' /&gt;" Guid="ca185dc9-6185-4404-89e9-d99050ab5e0d" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="3aa25f44736333a1dc583e7418c81aaa.jpg" xmlns="">0FoMyjhD9RE2f2FKC6pPUWw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

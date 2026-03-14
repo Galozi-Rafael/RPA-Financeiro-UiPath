@@ -111,25 +111,25 @@
       <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="NewDataBaseWizard" sap:VirtualizedContainerService.HintSize="819,3308" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="NewDataBaseWizard" sap:VirtualizedContainerService.HintSize="1245,3427" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="Sequence - New Database Wizard" sap:VirtualizedContainerService.HintSize="486,3285" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence DisplayName="Sequence - New Database Wizard" sap:VirtualizedContainerService.HintSize="486,3404" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[UiPath.UIAutomationNext.Enums.NAppCloseMode.Never]" DisplayName="New Database Wizard" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="452,3202" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" OpenMode="[UiPath.UIAutomationNext.Enums.NAppOpenMode.Never]" ScopeGuid="ce11133d-bf59-4780-a503-0aab6bffaa41" Version="V2">
+      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[UiPath.UIAutomationNext.Enums.NAppCloseMode.Never]" DisplayName="New Database Wizard" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="452,3321" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" OpenMode="[UiPath.UIAutomationNext.Enums.NAppOpenMode.Never]" ScopeGuid="ce11133d-bf59-4780-a503-0aab6bffaa41" Version="V2">
         <uix:NApplicationCard.Body>
           <ActivityAction x:TypeArguments="x:Object">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,2956" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,3075" sap2010:WorkflowViewState.IdRef="Sequence_3">
               <Sequence.Variables>
                 <Variable x:TypeArguments="x:String" Name="OpenDate" />
               </Sequence.Variables>
@@ -138,10 +138,17 @@
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'unchecked'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,194" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ce11133d-bf59-4780-a503-0aab6bffaa41" Version="V5">
+              <uix:NClick ActivateBefore="True" ClickType="Single" DelayBefore="10" DisplayName="Click 'unchecked'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,313" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ce11133d-bf59-4780-a503-0aab6bffaa41" Version="V5">
                 <uix:NClick.Target>
                   <uix:TargetAnchorable CVScreenId="569b38aa-0cc3-4aa9-a180-2a92607974ad" ContentHash="-lbmwHXlkUucWrgWPJbM2g" DesignTimeRectangle="577, 343, 75, 23" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;wnd ctrlid='5106' title='&amp;amp;Next &amp;gt;' automationid='5106' /&gt;" Guid="58fa20f6-3dff-4c39-84fc-963f17d8f3be" InformativeScreenshot="3644eeaeebb85c440ba60cc7a53f1810.jpg" Reference="s7GfPwX_u0WE4GyZeCCuzA/De5WfkWnVkSRAp36FbYRsQ" ScopeSelectorArgument="&lt;wnd app='mmex.exe' cls='#32770' title='New Database Wizard' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None" />
                 </uix:NClick.Target>
+                <uix:NClick.VerifyOptions>
+                  <uix:VerifyExecutionOptions DisplayName="Verification target" Mode="Appears">
+                    <uix:VerifyExecutionOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionOptions.Timeout>
+                  </uix:VerifyExecutionOptions>
+                </uix:NClick.VerifyOptions>
               </uix:NClick>
               <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'User Name'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,246" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="SameAsCard" ScopeIdentifier="ce11133d-bf59-4780-a503-0aab6bffaa41" Text="[in_UserName]" Version="V5">
                 <uix:NTypeInto.Target>
@@ -240,7 +247,7 @@
                   <OutArgument x:TypeArguments="x:String">[OpenDate]</OutArgument>
                 </Assign.To>
                 <Assign.Value>
-                  <InArgument x:TypeArguments="x:String">[DateTime.Now.AddYears(-1).ToString("ddMMyyyy")]</InArgument>
+                  <InArgument x:TypeArguments="x:String">[DateTime.Now.AddYears(-2).ToString("ddMMyyyy")]</InArgument>
                 </Assign.Value>
               </Assign>
               <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="[UiPath.UIAutomationNext.Enums.NClickMode.Single]" ClipboardMode="[UiPath.UIAutomationNext.Enums.NTypeByClipboardMode.Never]" DisplayName="Type Into 'Opening Date'" EmptyFieldMode="[UiPath.UIAutomationNext.Enums.NEmptyFieldMode.None]" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,246" sap2010:WorkflowViewState.IdRef="NTypeInto_4" InteractionMode="SameAsCard" ScopeIdentifier="ce11133d-bf59-4780-a503-0aab6bffaa41" Text="[OpenDate]" Version="V5">

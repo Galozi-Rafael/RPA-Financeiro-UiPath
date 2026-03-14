@@ -1,0 +1,13 @@
+﻿{
+  "Name": "CSV File…",
+  "Type": "Element",
+  "Id": "pOI_kmIFUkC26Ntf6eUpOg",
+  "Reference": "s7GfPwX_u0WE4GyZeCCuzA/pOI_kmIFUkC26Ntf6eUpOg",
+  "ParentRef": "s7GfPwX_u0WE4GyZeCCuzA/F1eisAjvgUiT8b6vvbn2TQ",
+  "Created": "2026-03-13T23:21:39.5870064Z",
+  "Updated": "2026-03-13T23:21:39.5870064Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.1.0.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
