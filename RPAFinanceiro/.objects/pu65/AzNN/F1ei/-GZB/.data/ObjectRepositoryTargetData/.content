@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="1IUrGah2gke9sbvl2bfZrw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="3988112d-a745-40dd-b2c3-033e6f559118" CvElementArea="491, 688, 75, 23" CvTextArea="510, 692, 32, 14" CvTextArgument="Close" CvType="Button" DesignTimeRectangle="491, 688, 75, 23" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;wnd cls='wxWindow' title='panel' /&gt;&lt;wnd ctrlid='10091' title='panel' automationid='10091' idx='3' /&gt;&lt;wnd ctrlid='5101' title='&amp;amp;Close ' /&gt;" Guid="289df058-48f3-40e4-a4b7-e873ed2ff15e" ScopeSelectorArgument="&lt;wnd app='mmex.exe' cls='#32770' title='Export as CSV file' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="None">
+      <imageRef attrName="InformativeScreenshot" originalValue="451a5efd64bc2c32597b984076635c10.jpg" xmlns="">08iT9pXSVaUivG8m5gwE98Q</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

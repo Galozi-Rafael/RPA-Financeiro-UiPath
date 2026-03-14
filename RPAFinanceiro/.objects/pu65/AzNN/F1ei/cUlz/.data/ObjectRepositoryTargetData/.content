@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="YA7si9DET0emBT0967Q2ZQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="ee79a429-7134-47d0-b863-d712d8cfe5cf" CvElementArea="4, 2, 206, 14" CvType="InputBox" DesignTimeRectangle="0, 0, 210, 17" ElementType="List" ElementVisibilityArgument="Interactive" Guid="6932c625-61e1-46e5-ad2f-3ce06c6a3d71" ScopeSelectorArgument="&lt;wnd app='mmex.exe' cls='ComboLBox' idx='*' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="ba1646cda75c32a25f3a5ddec00246f2.jpg" xmlns="">0opu6cqCUOEG3UuqmOWtHwQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

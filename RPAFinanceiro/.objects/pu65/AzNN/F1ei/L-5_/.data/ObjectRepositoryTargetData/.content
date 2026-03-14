@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="SXQXX2xTYUiEmmnccJUx_g" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="713eddd8-08cf-42f8-8606-0e29c6b141b6" DesignTimeRectangle="747, 489, 88, 26" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;wnd ctrlid='1' title='Sa&amp;amp;lvar' automationid='1' /&gt;" Guid="6eb88d5c-7c8c-4dfc-9418-c335d2862dd0" ScopeSelectorArgument="&lt;wnd app='mmex.exe' cls='#32770' title='Choose CSV data file to export' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None">
+      <imageRef attrName="InformativeScreenshot" originalValue="53c6ba951936187abdb5096164c03406.jpg" xmlns="">07eL9IgBbj0qCxL-TU9cgEw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

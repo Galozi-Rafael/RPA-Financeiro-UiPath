@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="-eEG_JiotkSySyF2jjOVEQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="06c2140c-c483-458d-a0a6-5a34b9fcf034" DesignTimeRectangle="85, 112, 210, 23" ElementType="DropDown" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;wnd cls='wxWindow' title='panel' matching:title='fuzzy' fuzzylevel:title='0.0' /&gt;&lt;wnd ctrlid='5102' matching:ctrlid='fuzzy' fuzzylevel:ctrlid='0.0' automationid='5102' /&gt;" Guid="52612705-04c2-4d6c-ac6d-afcd969d58e9" ScopeSelectorArgument="&lt;wnd app='mmex.exe' cls='#32770' title='Export as CSV file' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="None">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="06c2140c-c483-458d-a0a6-5a34b9fcf034" CvTextArea="17, 117, 36, 12" CvTextArgument="Preset:" CvType="Text" DesignTimeRectangle="18, 116, 57, 16" ElementType="Text" FuzzySelectorArgument="&lt;wnd cls='wxWindow' title='panel' matching:title='fuzzy' fuzzylevel:title='0.0' /&gt;&lt;wnd cls='Static' title='Preset:' matching:title='fuzzy' fuzzylevel:title='0.0' check:text='Preset:' /&gt;" Guid="d0448af9-f796-4cec-ab05-80543d22d045" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="95b16f6b3bb0d3378171ead0c3987c2a.jpg" xmlns="">0dQgqInm4KkamaRyWrEruGw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

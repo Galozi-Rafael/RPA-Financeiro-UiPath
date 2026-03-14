@@ -1,0 +1,14 @@
+﻿{
+  "Name": "mmex.exe(2)",
+  "Type": "Element",
+  "TaxonomyType": "Listbox",
+  "Id": "cUlzmF-XjkCth_U_9IQ-zg",
+  "Reference": "s7GfPwX_u0WE4GyZeCCuzA/cUlzmF-XjkCth_U_9IQ-zg",
+  "ParentRef": "s7GfPwX_u0WE4GyZeCCuzA/F1eisAjvgUiT8b6vvbn2TQ",
+  "Created": "2026-03-14T16:23:20.4180738Z",
+  "Updated": "2026-03-14T16:23:20.4180738Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.1.0.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
