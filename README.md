@@ -50,3 +50,15 @@ Configura automaticamente os parâmetros iniciais do sistema:
 
 # Estrutura do Projeto
 
+```mermaid
+flowchart LR
+
+A[RPA Financeiro] --> B[RPAFinanceiro]
+A-->C[.gitignore]
+A-->D[README.md]
+
+B-->E[cases]
+B-->F[Servs]
+B-->G[data] --> H[input]
+H-->I[output]
+H-->J[main.xaml]
